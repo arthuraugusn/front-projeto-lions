@@ -1,6 +1,6 @@
 const cursosCadastrados = async()=>{
 
-    const url = 'http://localhost:3030/cursos'
+    const url = 'https://projeto-lion-school.netlify.app/.netlify/functions/api/cursos'
 
     const response = await fetch(url)
 
@@ -10,7 +10,7 @@ const cursosCadastrados = async()=>{
 }
 
 const buscaAlunoMatricula = async(numeroMatricula, siglaCurso)=>{
-    const url = `http://localhost:3030/discente/${numeroMatricula}/${siglaCurso}`
+    const url = `https://projeto-lion-school.netlify.app/.netlify/functions/api/discente/${numeroMatricula}/${siglaCurso}`
 
     const response = await fetch(url)
 
@@ -20,7 +20,7 @@ const buscaAlunoMatricula = async(numeroMatricula, siglaCurso)=>{
 }
 
 const buscaAlunosCurso = async(curso)=>{
-    const url = `http://localhost:3030/alunos/${curso}`
+    const url = `https://projeto-lion-school.netlify.app/.netlify/functions/api/alunos/${curso}`
 
     const response = await fetch(url)
 
@@ -30,7 +30,7 @@ const buscaAlunosCurso = async(curso)=>{
 }
 
 const filtrarStatus = async(siglaCurso,statusAluno)=>{
-    const url = `http://localhost:3030/estudantes/${siglaCurso}/${statusAluno}`
+    const url = `https://projeto-lion-school.netlify.app/.netlify/functions/api/estudantes/${siglaCurso}/${statusAluno}`
 
     const response = await fetch(url)
 
@@ -40,7 +40,7 @@ const filtrarStatus = async(siglaCurso,statusAluno)=>{
 }
 
 const filtrarAno = async(anoConclusao, sigla)=>{
-    const url =`http://localhost:3030/aprendizes/${anoConclusao}/${sigla}`
+    const url =`https://projeto-lion-school.netlify.app/.netlify/functions/api/aprendizes/${anoConclusao}/${sigla}`
 
     const response = await fetch(url)
 
@@ -50,7 +50,7 @@ const filtrarAno = async(anoConclusao, sigla)=>{
 }
 
 const filtrarStatusAno = async(status, ano)=>{
-    const url = `http://localhost:3030/academico/${status}/${ano}`
+    const url = `https://projeto-lion-school.netlify.app/.netlify/functions/api/academico/${status}/${ano}`
 
     const response = await fetch(url)
 
