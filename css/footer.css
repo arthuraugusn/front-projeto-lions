@@ -1,0 +1,60 @@
+footer{
+    background-color: var(--azul-opaco);
+    display: flex;
+    height:20vh;
+    width: 100vw;
+}
+
+.caixa-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.infos-contato{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding-left: 10%;
+    width: 25%;
+}
+
+.contato{
+    color: white;
+    font-size: clamp(0.5rem, 5vw, 1.3rem);
+}
+
+.copyright{
+    display: flex;
+    color: white;
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+    width: 25%;
+}
+
+.social-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px; 
+}
+
+i{
+    font-size: clamp(0.5rem, 5vw, 1.5rem);
+    color: white;
+}

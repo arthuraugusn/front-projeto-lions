@@ -1,0 +1,61 @@
+header {
+    background-color: var(--azul-opaco);
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.caixa-header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-header{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: end;
+    gap: 10px;
+}
+
+.logo-lion-img{
+    display: flex;
+    width: 4em;
+    height:5em;
+}
+
+.exit-header-img{
+    display: flex;
+    width: 3.5em;
+    height: 3.5em;
+}
+
+.caixa-span{
+    display: flex;
+    width: 30%;
+}
+
+.span-header-lion{
+    font-size: clamp(1rem, 5vw, 2rem);
+    color: white;
+}
+
+.exit-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+}
+
+.span-header-exit{
+    font-size: clamp(1rem, 5vw, 3rem);
+    color: white;
+}
+
+@media(max-width: 670px){
+    .logo-lion-img, .exit-header-img{
+        object-fit: scale-down;
+    }
+}   

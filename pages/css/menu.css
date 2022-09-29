@@ -1,0 +1,61 @@
+nav{
+    display: flex;
+    background-color: var(--cor-nav);
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+}
+
+.cards-azul{
+    background-color: #3347B0;
+}
+.cards-amarelo{
+    background-color: #E5B657;
+}
+
+.cards-alunos img{
+    margin-top: 20px;
+    width: 70%;
+}
+
+.cards-alunos span{
+    margin: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.menu li{
+    position: relative;   
+}
+
+.menu li a {
+    display: block;
+}
+
+.menu li ul{
+    position: absolute;
+    display: none;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+.menu li ul li{
+    padding: 10px;
+    background: #3347B0;
+    display:block;
+}
+
+.inativo{
+    display: none;
+}

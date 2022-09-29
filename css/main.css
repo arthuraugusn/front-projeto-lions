@@ -1,0 +1,78 @@
+main{
+    height: 100vh;
+}
+
+.caixa-main{
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.caixa-imgs{
+    display: flex;
+    gap: 80px;
+}
+
+.caixa-inform-devices{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 150px;
+}
+
+.texto-escolha{
+    width: 100%;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.curso-cor{
+    color: var(--azul-opaco);
+}
+
+.devices-imgs{
+    width: 100%;
+}
+
+.caixa-icone{
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.estudante-img{
+    height: 90%;
+}
+
+.cursos{
+    display: flex;
+    gap: 40px;
+    width: 25%;
+    height: 37rem;
+    flex-direction: column;
+}
+
+.container-link{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-opaco);
+    box-shadow: 20px 20px 7px var(--sombra-curso);
+    width: 100%;
+    height: 100%;
+}
+
+.link{
+    font-size: clamp(1rem, 5vw, 4rem);
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:700px){
+    .caixa-icone{
+        display: none;
+    }
+}

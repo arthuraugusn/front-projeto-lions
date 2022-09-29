@@ -1,0 +1,15 @@
+:root{
+    --azul-opaco: #3347B0;
+    --sombra-curso: #5b68ab;
+    --azul-alunos:#3347B0;
+    --amarelo-alunos: #E5B657;
+    --cor-nav:#BCC2E5;
+
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
