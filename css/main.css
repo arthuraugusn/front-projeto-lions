@@ -71,6 +71,10 @@ main{
     justify-content: center;
 }
 
+.icon-caixa{
+    width: 30%;
+}
+
 @media(max-width:700px){
     .caixa-icone{
         display: none;

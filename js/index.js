@@ -8,12 +8,14 @@ const criarCard = (dado)=>{
 
     const img = document.createElement('img')
     img.src = dado.icone
+    img.classList.add('icon-caixa')
 
     const a = document.createElement('a')
     a.classList.add('link')
     a.textContent = dado.sigla
     a.href = './pages/alunos.html'
 
+    div.appendChild(img)
     div.appendChild(a)
 
     return div
