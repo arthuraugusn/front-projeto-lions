@@ -94,3 +94,16 @@ main{
     margin-bottom: 10px;
     font-size: clamp(0.2rem, 5vw, 1.5rem);
 }
+
+@media(max-width:1400px){   
+    .aluno{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
+    .caixa-aluno{
+        width: 100px;
+    }
+}

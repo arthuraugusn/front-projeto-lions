@@ -75,8 +75,29 @@ main{
     width: 30%;
 }
 
-@media(max-width:700px){
-    .caixa-icone{
+@media(max-width:1400px){
+    .caixa-main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .caixa-icone, .devices-imgs{
         display: none;
+    }
+    .caixa-inform-devices{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .container-link{
+        display: flex;
+        height: 30%;
+        width: 120%;
+    }
+    .texto-escolha{
+        font-size: clamp(0.7rem, 5vw, 3.5rem);
+    }
+    .link{
+        font-size: clamp(0.5rem, 5vw, 3.5rem);
     }
 }

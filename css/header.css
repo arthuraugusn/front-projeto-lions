@@ -54,7 +54,7 @@ header {
     color: white;
 }
 
-@media(max-width: 670px){
+@media(max-width: 1400px){
     .logo-lion-img, .exit-header-img{
         object-fit: scale-down;
     }

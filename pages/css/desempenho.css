@@ -119,3 +119,27 @@ main{
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+@media(max-width:1400px){
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 20px   ;
+    }
+    .info-aluno{
+        width: 50%;
+    }
+    .info-aluno img{
+        width: 100%;
+    }
+    .caixa-desempenho{
+        width: 100%;
+        gap: 10px;
+    }
+    .desempenho{
+        width: 5px;
+    }
+    .container span{
+        font-size: clamp(0.8rem, 5vw, 0.5rem);
+    }
+}

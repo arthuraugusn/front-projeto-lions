@@ -1,7 +1,7 @@
 footer{
     background-color: var(--azul-opaco);
     display: flex;
-    height:20vh;
+    height:10vh;
     width: 100vw;
 }
 
@@ -57,4 +57,10 @@ footer{
 i{
     font-size: clamp(0.5rem, 5vw, 1.5rem);
     color: white;
+}
+
+@media(max-width: 1400px){
+    footer{
+        display: none;
+    }
 }
