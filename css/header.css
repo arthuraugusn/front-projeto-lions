@@ -12,6 +12,11 @@ header {
     justify-content: space-between;
 }
 
+.logo-link{
+    display: flex;
+    gap: 10px;
+}
+
 .logo-header{
     display: flex;
     align-items: center;
