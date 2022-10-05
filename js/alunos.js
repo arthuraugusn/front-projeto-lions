@@ -25,24 +25,39 @@ const criarCard = (dadoAluno)=>{
     if(dadoAluno.statusAluno=='Finalizado'){
         a.classList.add('caixa-aluno-amarelo')
     }
-    
+
     a.appendChild(img)
     a.appendChild(span)
 
     return a
 }
 
+const criarTitulo = (dadoAluno)=>{
+    const h1 = document.createElement('h1')
+    let separador = dadoAluno.nomeCurso.split('-')
+    h1.textContent = separador[1]
 
+    return h1
+}
 
 const carregarAlunos = async(siglaCurso)=>{
+    const main = document.querySelector('main')
+    main.innerHTML= ''
+
     const alunos = await buscaAlunosCurso(siglaCurso)
 
-    const alunoCaixa = document.getElementById('aluno')
+    const div = document.createElement('div')
+    div.classList.add('aluno')
+    div.id = 'aluno'
 
+    const titulo = criarTitulo(alunos[0])
 
     const criandoCards = alunos.map(criarCard)
 
-    alunoCaixa.replaceChildren(...criandoCards)
+    div.replaceChildren(...criandoCards)
+
+    main.appendChild(titulo)
+    main.appendChild(div)
 }
 
 const sigla = localStorage.getItem('curso').toLowerCase()

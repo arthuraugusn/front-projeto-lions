@@ -79,7 +79,6 @@ main{
     .caixa-main{
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
     .caixa-icone, .devices-imgs{
         display: none;
@@ -93,6 +92,7 @@ main{
         display: flex;
         height: 30%;
         width: 120%;
+        box-shadow: none;
     }
     .texto-escolha{
         font-size: clamp(0.7rem, 5vw, 3.5rem);

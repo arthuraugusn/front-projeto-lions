@@ -1,6 +1,27 @@
 main{
+    display: flex;
+    gap: 10px;
     height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+h1{
+    font-size: clamp(0.5rem, 5vw, 4rem);
+    color: var(--azul-alunos);
+}
+
+.aluno{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
 .legenda{
     display: flex;
     gap: 10px;
@@ -41,37 +62,12 @@ h3{
     color: #3347B0;
 }
 
-main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100vw;
-    justify-content: center;
-}
-
-
-
-.caixa-alunos{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.aluno{
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
 .caixa-aluno{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    width: 200px;
+    height: 40%;
 }
 
 .caixa-aluno-azul{
@@ -85,7 +81,7 @@ main{
 
 
 .img-aluno{
-    width: 90%;
+    width:60%;
 }
 
 .span-nome{
@@ -95,15 +91,3 @@ main{
     font-size: clamp(0.2rem, 5vw, 1.5rem);
 }
 
-@media(max-width:1400px){   
-    .aluno{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 90%;
-    }
-    .caixa-aluno{
-        width: 100px;
-    }
-}
