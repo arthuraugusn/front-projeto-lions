@@ -84,27 +84,24 @@ main{
 
 @media(max-width:1400px){
     .caixa-main{
+        margin-top: 20%;
         display: flex;
         flex-direction: column;
+        gap: 40px;
     }
-    .caixa-icone, .devices-imgs{
+    .devices-imgs{
         display: none;
     }
-    .caixa-inform-devices{
+    .studant-img{
+        display: none;
+    }
+    .cursos{
         display: flex;
         align-items: center;
-        width: 100%;
+        justify-content: center;
     }
     .container-link{
-        display: flex;
-        height: 30%;
-        width: 120%;
+        width: 90%;
         box-shadow: none;
-    }
-    .texto-escolha{
-        font-size: clamp(0.7rem, 5vw, 3.5rem);
-    }
-    .link{
-        font-size: clamp(0.5rem, 5vw, 3.5rem);
     }
 }
