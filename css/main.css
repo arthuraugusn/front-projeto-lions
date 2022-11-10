@@ -84,10 +84,16 @@ main{
 
 @media(max-width:1400px){
     .caixa-main{
-        margin-top: 20%;
+        margin-top: 15%;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 40px;
+    }
+    .caixa-inform-devices{
+        display: flex;
+        text-align: center;
     }
     .devices-imgs{
         display: none;
@@ -99,9 +105,26 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 50%;
     }
     .container-link{
         width: 90%;
         box-shadow: none;
+    }
+}
+
+@media(max-width:768px){
+    .cursos{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .container-link{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .container-link img{
+        display: flex;
+        width: 60%;
     }
 }
